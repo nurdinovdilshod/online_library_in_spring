@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
+<head th:replace="fragments :: head(~{::title})">
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+<div th:replace="fragments :: header"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 justify-content-center g-2 d-flex">
+            <a href="/book/add" class="btn btn-danger">Add Book</a>
+            <a href="/login" class="btn btn-secondary">Login</a>
+            <a href="/register" class="btn btn-success">Register</a>
+        </div>
+    </div>
+</div>
+
+<div th:replace="fragments :: js_links"></div>
+</body>
+</html>
